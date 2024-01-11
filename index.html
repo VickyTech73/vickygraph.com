@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph plotter 3.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="myBody">
+
+        <div class="container">
+
+            <div class="controls">
+
+                <fieldset class="points_def_container">
+                    <legend>Points and Coordinates</legend>
+                </fieldset>
+
+                <div class="prad_controls">
+
+                    <div class="prad_controls_division">
+                        <button id="point_removal" class="prad_button" type="button" disabled>Remove point</button>
+                    </div>
+
+                    <div class="prad_controls_division">
+                        <button id="point_addition" class="prad_button" type="button" disabled>Add point</button>
+                    </div>
+
+                </div>
+
+                <fieldset class="graph_settings_container">
+                    <legend>Graph settings</legend>
+
+                    <table class="graph_settings_table">
+
+                        <tr>
+                            <td class="name">Graph background</td>
+                            <td><input type="color" class="graph_background"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="name">Line color</td>
+                            <td><input type="color" class="line_color"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="name">Number of rows</td>
+                            <td><input type="number" min="10" max="60" value="20" class="graph_row_col_num" id="number_of_rows_inp"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="name">Number of columns</td>
+                            <td><input type="number" min="10" max="60" value="20" class="graph_row_col_num" id="number_of_col_inp"></td>
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+            </div>
+
+            <div class="graph"></div>
+
+            <h3>Graph plotter 3.0 Copyright &copy 2024 Vickytech Inc.</h3>
+
+        </div>
+    </div>
+</body>
+</html>
